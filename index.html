@@ -1,81 +1,109 @@
 <!doctype html>
 <html lang="en">
 <head>
-<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>YUG — AI Battlefield Noise Cancellation | TAM SAM SOM</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>YUG | TAM–SAM–SOM | AI Battlefield Noise Cancellation</title>
 <style>
-*{box-sizing:border-box}body{margin:0;background:#f5f7fa;color:#172334;font-family:Arial,Segoe UI,sans-serif}.wrap{max-width:1180px;margin:auto;padding:42px}
-header{border-bottom:1px solid #d9e1eb;padding-bottom:22px}.eyebrow{color:#d87918;font-size:12px;font-weight:800;letter-spacing:2px}.title{font-size:39px;font-weight:900;color:#10233f;margin:7px 0}.sub{color:#64748b;font-size:15px}
-.grid{display:grid;grid-template-columns:1.25fr 1fr .8fr;gap:18px;margin:30px 0 20px}.card{background:#fff;border:1px solid #dce4ee;border-radius:20px;padding:23px;box-shadow:0 10px 25px #10233f0b;border-top:6px solid}.tam{border-top-color:#2774d8}.sam{border-top-color:#d99a24}.som{border-top-color:#26966f}
-.head{display:flex;gap:12px;align-items:center}.n{width:38px;height:38px;border-radius:11px;color:#fff;display:grid;place-items:center;font-weight:900}.tam .n{background:#2774d8}.sam .n{background:#d99a24}.som .n{background:#26966f}
-h2{margin:0;color:#10233f}.tag{font-weight:800;margin:14px 0}.metric{padding:12px;border-radius:12px;font-size:13px;font-weight:800;margin-bottom:15px}.tam .metric{background:#eaf2ff;color:#1856a8}.sam .metric{background:#fff3dc;color:#98640d}.som .metric{background:#e8f7f1;color:#176c50}
-li{margin:9px 0;color:#435166;font-size:13px;line-height:1.35}.note{font-size:11px;color:#64748b;line-height:1.45;margin-top:14px}
-.flow{display:grid;grid-template-columns:repeat(4,1fr);gap:10px}.step{background:#10233f;color:#fff;border-radius:13px;padding:14px;font-size:11px}.step b{display:block;font-size:12px}.step span{color:#cbd7e6}
-.bottom{display:grid;grid-template-columns:1fr 1.5fr;gap:18px;margin-top:18px}.panel{background:#fff;border:1px solid #dce4ee;border-radius:17px;padding:20px}.why{background:#10233f;color:#fff}.panel h3{margin:0 0 8px;color:#10233f}.why h3{color:#fff}.panel p{font-size:13px;line-height:1.5;color:#536176}.why p{color:#d8e3ef}
-footer{margin-top:20px;border-top:1px solid #dce4ee;padding-top:14px;font-size:10px;color:#718096;line-height:1.5}
-@media(max-width:800px){.wrap{padding:22px}.grid{grid-template-columns:1fr}.flow{grid-template-columns:1fr 1fr}.bottom{grid-template-columns:1fr}.title{font-size:29px}}
-</style></head>
-<body><main class="wrap">
-<header>
-<div class="eyebrow">YUG TEAM • SIH26052 • DEFENCE COMMUNICATION</div>
-<div class="title">AI Battlefield Noise Cancellation — Market Opportunity</div>
-<div class="sub">TAM • SAM • SOM | Real-Time Speech Enhancement for High-Noise Defence Environments</div>
+*{box-sizing:border-box}body{margin:0;background:#fff;color:#10264a;font-family:Arial,Helvetica,sans-serif}
+.page{max-width:1500px;margin:auto;padding:24px}
+.header{display:flex;align-items:center;gap:24px;border-bottom:3px solid #f05a24;padding-bottom:16px}
+.logo{width:145px;height:82px;object-fit:contain}.title{flex:1}
+h1{margin:0;font-size:clamp(30px,3.3vw,50px);line-height:1.05}
+.subtitle{font-size:23px;color:#64738a;font-weight:700;margin-top:7px}
+.nav{display:flex;gap:8px;flex-wrap:wrap}.nav span{padding:9px 12px;font-weight:700}.nav .active{background:#f05a24;color:white;border-radius:6px}
+.intro{margin:20px 0;padding:16px 20px;border:1px solid #d6dde6;border-left:6px solid #f05a24;border-radius:7px;background:#f7f9fb;font-size:19px}
+.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.card{border:1px solid #ccd5df;border-radius:8px;overflow:hidden;background:white}
+.head{padding:15px 18px;color:white;display:flex;gap:14px;align-items:center}.tam .head{background:#f05a24}.sam .head{background:#125aa2}.som .head{background:#13833b}
+.head .symbol{font-size:40px;font-weight:900}.head h2{margin:0;font-size:42px;line-height:1}.head p{margin:5px 0 0;font-size:18px;font-weight:700}
+.content{padding:17px}.definition{padding:16px;background:#f7f9fb;border:1px solid #dfe5eb;border-radius:7px;font-size:18px;min-height:145px}.definition strong{font-weight:900}
+.number{text-align:center;margin:14px 0;padding:17px 8px;border:1px solid #dfe5eb;border-radius:7px}.tam .number{background:#fff8f4;color:#e74717}.sam .number{background:#f3f8fd;color:#124f91}.som .number{background:#f2faf4;color:#0d7132}
+.big{font-size:44px;font-weight:900;line-height:1.08}.year{font-size:21px;font-weight:900;margin-top:5px}.growth{font-size:17px;margin-top:8px;font-weight:700}
+.chart-title,.section-title{font-size:19px;font-weight:900;margin:17px 0 9px}.section-title{padding-bottom:7px;border-bottom:2px solid #d9e0e8}
+.chart{height:170px;display:flex;align-items:flex-end;gap:9px;padding:10px 8px 0;border-left:1px solid #8b98a8;border-bottom:1px solid #8b98a8}
+.barwrap{height:100%;flex:1;display:flex;flex-direction:column;justify-content:flex-end;align-items:center;gap:4px}.bar{width:70%;min-width:22px;border-radius:3px 3px 0 0}.tam .bar{background:#f05a24}.sam .bar{background:#2e83cf}.barv{font-size:14px;font-weight:900}.bary{font-size:13px;font-weight:700}
+.components{display:grid;grid-template-columns:repeat(2,1fr);gap:8px}.component{padding:12px 7px;text-align:center;border:1px solid #e0e6ed;border-radius:6px;font-size:16px;font-weight:800}.icon{font-size:27px;display:block;margin-bottom:5px}
+.list{font-size:17px;margin:8px 0;padding-left:22px}.list li{margin:9px 0}.list strong{font-weight:900}
+.calc{border:1px solid #dce5dc;border-radius:7px;overflow:hidden}.row{display:grid;grid-template-columns:1fr 1fr;border-bottom:1px solid #dce5dc}.row:last-child{border:0}.row div{padding:12px;font-size:16px}.row div:first-child{font-weight:700;background:#fafcfb}.row div:last-child{font-weight:900}
+.highlight{margin:14px 0;padding:13px;text-align:center;background:#e8f6eb;border-radius:6px;color:#0d7132;font-size:20px;font-weight:900}
+.source{border-top:1px solid #dfe5ea;margin-top:17px;padding-top:10px;color:#536173;font-size:13px}.note{font-size:14px;color:#536173}
+.footer{margin-top:20px;padding-top:12px;border-top:1px solid #d9e0e8;color:#5c6877;font-size:14px}
+@media(max-width:1050px){.header{flex-wrap:wrap}.nav{width:100%}.cards{grid-template-columns:1fr}}
+@media(max-width:650px){.page{padding:12px}.logo{width:105px;height:62px}.subtitle{font-size:17px}.head h2{font-size:35px}.definition,.list{font-size:16px}.big{font-size:35px}}
+</style>
+</head>
+<body>
+<div class="page">
+<header class="header">
+<img class="logo" src="data:image/png;base64,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">
+<div class="title"><h1>AI Battlefield Noise Cancellation</h1><div class="subtitle">Market Opportunity Analysis — TAM • SAM • SOM</div></div>
+<nav class="nav"><span class="active">TAM – SAM – SOM</span><span>TAM</span><span>SAM</span><span>SOM</span><span>References</span></nav>
 </header>
 
-<section class="grid">
-<article class="card tam">
-<div class="head"><div class="n">01</div><h2>TAM</h2></div>
-<div class="tag">Total Addressable Market</div>
-<div class="metric">Global tactical communication &amp; noise-reduction ecosystem</div>
-<ul>
-<li>Tactical communication systems</li>
-<li>Military communication headsets</li>
-<li>Active / passive hearing-protection systems</li>
-<li>Secure voice communication equipment</li>
+<div class="intro"><strong>How to read this page:</strong> <strong>TAM</strong> = the full market. <strong>SAM</strong> = the part of that market that matches our product. <strong>SOM</strong> = the part we can realistically target first.</div>
+
+<main class="cards">
+
+<section class="card tam">
+<div class="head"><div class="symbol">◎</div><div><h2>TAM</h2><p>Total Addressable Market</p></div></div>
+<div class="content">
+<div class="definition"><strong>TAM is the total global market</strong> for tactical communication systems used in defence. It includes <strong>military radios, tactical headsets, intercoms</strong> and related communication equipment.</div>
+<div class="number"><div class="big">USD 28.0 Billion</div><div class="year">in 2026</div><div class="growth">Expected to reach <strong>USD 43.2 Billion by 2032</strong><br>(CAGR <strong>7.5%</strong>)</div></div>
+<div class="chart-title">Global Tactical Communication Market</div>
+<div class="chart">
+<div class="barwrap"><div class="barv">24.5</div><div class="bar" style="height:75px"></div><div class="bary">2024</div></div>
+<div class="barwrap"><div class="barv">28.0</div><div class="bar" style="height:88px"></div><div class="bary">2026</div></div>
+<div class="barwrap"><div class="barv">32.6</div><div class="bar" style="height:103px"></div><div class="bary">2028</div></div>
+<div class="barwrap"><div class="barv">37.4</div><div class="bar" style="height:119px"></div><div class="bary">2030</div></div>
+<div class="barwrap"><div class="barv">43.2</div><div class="bar" style="height:138px"></div><div class="bary">2032</div></div>
+</div>
+<div class="section-title">Key components included in TAM</div>
+<div class="components"><div class="component"><span class="icon">📻</span>Military radios</div><div class="component"><span class="icon">🎧</span>Tactical headsets</div><div class="component"><span class="icon">📟</span>Intercoms</div><div class="component"><span class="icon">📡</span>Battlefield communication</div></div>
+<div class="source"><strong>Source:</strong> Fortune Business Insights, Tactical Communication Market. Market size: <strong>USD 28.0B in 2026</strong>; CAGR <strong>7.5%</strong>.</div>
+</div></section>
+
+<section class="card sam">
+<div class="head"><div class="symbol">◎</div><div><h2>SAM</h2><p>Serviceable Available Market</p></div></div>
+<div class="content">
+<div class="definition"><strong>SAM is the part of the global market that matches our product.</strong> For this project, it means <strong>tactical headsets with noise reduction</strong> used by defence forces.</div>
+<div class="number"><div class="big">USD 2.0 Billion</div><div class="year">in 2025</div><div class="growth">Expected to reach <strong>USD 3.4 Billion by 2035</strong><br>(CAGR <strong>5.5%</strong>)</div></div>
+<div class="chart-title">Tactical Noise-Reduction Headset Market</div>
+<div class="chart">
+<div class="barwrap"><div class="barv">2.0</div><div class="bar" style="height:76px"></div><div class="bary">2025</div></div>
+<div class="barwrap"><div class="barv">2.3</div><div class="bar" style="height:88px"></div><div class="bary">2027</div></div>
+<div class="barwrap"><div class="barv">2.6</div><div class="bar" style="height:99px"></div><div class="bary">2029</div></div>
+<div class="barwrap"><div class="barv">3.0</div><div class="bar" style="height:114px"></div><div class="bary">2031</div></div>
+<div class="barwrap"><div class="barv">3.4</div><div class="bar" style="height:132px"></div><div class="bary">2035</div></div>
+</div>
+<div class="section-title">Why this is our SAM</div>
+<ul class="list">
+<li>Focuses on <strong>tactical headsets with noise reduction</strong>.</li>
+<li>Used by <strong>military and defence personnel</strong> in high-noise environments.</li>
+<li>Relevant to <strong>land, air and naval defence operations</strong>.</li>
+<li>This is the segment most directly connected to our product.</li>
 </ul>
-<div class="note">Published market research estimates the global tactical communication market at about US$23.0B in 2026. A separate market study estimates the noise-reduction tactical headset market at US$2.0B in 2025.</div>
-</article>
+<div class="source"><strong>Source:</strong> Future Market Insights, Noise Reduction Tactical Headset Market. Market size: <strong>USD 2.0B in 2025</strong>; CAGR <strong>5.5%</strong>.</div>
+</div></section>
 
-<article class="card sam">
-<div class="head"><div class="n">02</div><h2>SAM</h2></div>
-<div class="tag">Serviceable Available Market</div>
-<div class="metric">Defence users requiring clear voice communication in high-noise operations</div>
-<ul>
-<li>Military ground forces</li>
-<li>Defence tactical communication units</li>
-<li>Specialized soldier communication systems</li>
-<li>Law-enforcement &amp; security units with tactical communication needs</li>
+<section class="card som">
+<div class="head"><div class="symbol">◔</div><div><h2>SOM</h2><p>Serviceable Obtainable Market</p></div></div>
+<div class="content">
+<div class="definition"><strong>SOM is the part of SAM that we can realistically target first.</strong> For YUG, this means an <strong>initial Indian defence deployment</strong> based on a limited rollout.</div>
+<div class="number"><div class="big">USD 2.0 Million</div><div class="year">(≈ ₹2.0 Crore)</div><div class="growth">Illustrative / assumption-based</div></div>
+<div class="highlight"><strong>5,000 sets × ₹4,000 per set = ₹2.0 Crore</strong></div>
+<div class="section-title">How is SOM calculated?</div>
+<div class="calc"><div class="row"><div>Initial target</div><div><strong>5,000 sets</strong></div></div><div class="row"><div>Target price</div><div><strong>₹4,000 per set</strong></div></div><div class="row"><div>Total initial market value</div><div><strong>₹2.0 Crore</strong></div></div></div>
+<div class="section-title">Why start with this target?</div>
+<ul class="list">
+<li>It represents a <strong>limited initial deployment</strong>, not the whole defence market.</li>
+<li>It can support <strong>pilot testing and field validation</strong>.</li>
+<li>Successful validation can support <strong>larger future deployment</strong>.</li>
 </ul>
-<div class="note">SAM narrows the broader communications market to users where real-time speech enhancement and noise suppression are directly relevant.</div>
-</article>
+<div class="source"><strong>Important:</strong> SOM is an <strong>illustrative, assumption-based estimate</strong>. Actual procurement value and market share would depend on defence trials, procurement requirements and orders.</div>
+</div></section>
 
-<article class="card som">
-<div class="head"><div class="n">03</div><h2>SOM</h2></div>
-<div class="tag">Serviceable Obtainable Market</div>
-<div class="metric">Initial deployment pathway for YUG</div>
-<ul>
-<li>Pilot with selected defence / government units</li>
-<li>Defence R&amp;D and testing organizations</li>
-<li>Indian tactical communication integrators</li>
-<li>Controlled field trials before larger procurement</li>
-</ul>
-<div class="note"><b>Phase 1:</b> Prototype → controlled trials → defence validation<br><b>Phase 2:</b> System integration → scaled deployment</div>
-</article>
-</section>
-
-<section class="flow">
-<div class="step"><b>01 • PROTOTYPE</b><span>Build and bench-test speech enhancement</span></div>
-<div class="step"><b>02 • VALIDATE</b><span>Test speech clarity under battlefield noise</span></div>
-<div class="step"><b>03 • INTEGRATE</b><span>Connect with tactical headset / radio workflow</span></div>
-<div class="step"><b>04 • SCALE</b><span>Move from trials to larger deployments</span></div>
-</section>
-
-<section class="bottom">
-<div class="panel why"><h3>Market Need</h3><p>Current tactical headsets already combine communication and hearing protection. The proposed system targets the additional challenge of maintaining speech intelligibility when battlefield noise interferes with voice communication.</p></div>
-<div class="panel"><h3>Market Evidence</h3><p>Recent industry sources describe continued demand for tactical communications and integrated hearing-protection headsets. For example, Rheinmetall reported a Bundeswehr framework contract for up to 191,000 communication headsets with hearing-protection functionality. This demonstrates an established procurement category, while the proposed YUG system focuses specifically on AI-assisted speech enhancement.</p></div>
-</section>
-
-<footer>
-<b>Source note:</b> Market figures are industry-level context, not a forecast of YUG revenue. Tactical communication market estimate: Fortune Business Insights / Mordor Intelligence. Noise-reduction tactical headset estimate: Future Market Insights. Bundeswehr procurement example: Rheinmetall. Market values and definitions vary by research methodology and scope.
-</footer>
-</main></body></html>
+</main>
+<div class="footer"><strong>YUG — AI Battlefield Noise Cancellation</strong> | Market sizing page linked from the project presentation. Published market figures are shown separately from the assumption-based SOM calculation.</div>
+</div>
+</body>
+</html>
